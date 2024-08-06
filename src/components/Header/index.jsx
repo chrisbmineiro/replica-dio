@@ -4,8 +4,6 @@ import Button from '../Button';
 import {
     Container,
     Row,
-    // eslint-disable-next-line no-unused-vars
-    Column,
     Wrapper,
     Input,
     Menu,
@@ -19,7 +17,7 @@ const Header = () => {
     <Wrapper>
         <Container>
             <Row>
-                <img src="/images/logo.png" alt="Logo" />
+                <img src="/src/assets/logo-dio.png" alt="Logo" />
                 <MenuRight href="#">Home</MenuRight>
                 <Button title="Entrar" />
                 <Button title="Cadastrar" />
@@ -27,7 +25,8 @@ const Header = () => {
                 <Menu>Contato</Menu>
             </Row>
             <Row>
-                <img src="/images/logo.png" alt="logo da DIO" />
+                <img src="/src/assets/logo-dio.png
+                " alt="logo da DIO" />
                 <SearchInputContainer>
                     <Input placeholder="Pesquisar" />
                 </SearchInputContainer>

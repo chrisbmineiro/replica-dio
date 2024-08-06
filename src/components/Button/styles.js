@@ -1,20 +1,26 @@
 import styled, {css} from "styled-components";
 
-export const ButtonContainer = styled.div `
+export const ButtonContainer = styled.button `
   border-radius: 22px;
   position: relative;
   width: 100%;
   min-width: 120px;
 
   padding: 2px 12px;
-  color: white;
-  background-color: #565656;
+  color: #FFFFFF;
+  text-align: center;
+  background: #565656;
 
   ${({variant}) => variant !== "primary" && css `
     min-width: 167px;
     height: 33px;
 
-    background-color: #E41050;
+    background: #E4105D;
+
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
     
     $::after {
       content: "";
@@ -24,7 +30,7 @@ export const ButtonContainer = styled.div `
       width: calc(100% + 10px);
       height: calc(100% + 10px);
       border-radius: 22px;
-      border: 2px solid #E41050;
+      border: 1px solid #E4105D;
     }
   `}
 `;

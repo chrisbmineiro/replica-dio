@@ -1,8 +1,13 @@
 import Home from "./pages/home/index";
+import Login from "./pages/login/index";
+import { GlobalStyle } from './styles/global'
 
 function App() {
-  return (
+  return (<>
+    <GlobalStyle />
     <Home />
+    <Login />
+  </>
   );
 }
 

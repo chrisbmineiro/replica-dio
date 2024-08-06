@@ -20,7 +20,7 @@ export const Title =  styled.h2`
 
   margin-bottom: 20px;
   line-height: 44px;
-  font-family: 'Open Suns';
+  font-family: 'Open Sans';
   font-style: normal;
 `;
 
@@ -36,6 +36,6 @@ export const TextContent = styled.p`
 
   margin-bottom: 20px;
   line-height: 22px;
-  font-family: 'Open Suns';
+  font-family: 'Open Sans';
   font-style: normal;
 `;

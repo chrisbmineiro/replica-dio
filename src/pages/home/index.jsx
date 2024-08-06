@@ -10,7 +10,7 @@ const Home = () => {
             <Container>
                 <div>
                     <Title>
-                        <TitleHighlight>implemente</TitleHighlight>
+                        <TitleHighlight>implemente <br /></TitleHighlight>
                         o seu futuro global agora <br />
                     </Title>
                     <TextContent>
