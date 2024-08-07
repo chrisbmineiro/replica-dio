@@ -8,7 +8,7 @@ export const Container = styled.main`
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 60px;
 `;
 
 export const Wrapper = styled.div`
@@ -24,7 +24,7 @@ export const Row = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
 `;
 
 export const Title =  styled.h2`
@@ -55,21 +55,24 @@ export const SubtitleLogin =  styled.p`
   font-family: 'Open Sans';
   font-style: normal;
 `;
-export const EsqueciText =  styled.p`
-button {
-    background: transparent;
-    border: none;
-    color: #E5E044;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 19px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    cursor: pointer;
-  }
+export const InfoText =  styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  color: #FFFFFF;
+  margin-top: 27px;
+  margin-bottom: 11px;
 `;
+export const ContaText =  styled.p`
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  color: #FFFFFF;
 
-export const CriarText =  styled.p`
   button {
     background: transparent;
     border: none;
@@ -82,3 +85,4 @@ export const CriarText =  styled.p`
     cursor: pointer;
   }
 `;
+

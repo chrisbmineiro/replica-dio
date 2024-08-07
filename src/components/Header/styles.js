@@ -5,16 +5,16 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   
-  margin: 0 auto;
   height: 47px;
   width: 100%;
-  max-width: 80%;
+  max-width: 90%;
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 17px;
 `;
 
 export const Wrapper = styled.div`
@@ -36,6 +36,7 @@ export const SearchInputContainer = styled.div`
   margin: 0 12px;
 
   display: flex;
+  align-items: center;
 `;
 
 export const Menu = styled.a`
@@ -45,16 +46,15 @@ export const Menu = styled.a`
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-right: 12px;
 `;
 
 export const MenuRight = styled.a`
   font-family: "Open Sans";
+  font-weight: 400;
   font-style: normal;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
-  margin-right: 12px;
   text-decoration: none;
 `;
 
@@ -70,4 +70,8 @@ export const Input = styled.input`
   color: #FFFFFF;
   flex: 1;
   background: transparent;
+
+  &::placeholder {
+    color: #FFFFFF;
+  }
 `;

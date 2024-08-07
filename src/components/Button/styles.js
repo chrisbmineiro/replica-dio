@@ -2,13 +2,20 @@ import styled, {css} from "styled-components";
 
 export const ButtonContainer = styled.button `
   border-radius: 22px;
+  border: none;
   position: relative;
   width: 100%;
   min-width: 120px;
   padding: 2px 12px;
   color: #FFFFFF;
   text-align: center;
+  font-size: 18px;
   background: #565656;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 
   ${({variant}) => variant !== "primary" && css `
     min-width: 167px;
@@ -31,4 +38,6 @@ export const ButtonContainer = styled.button `
       border: 1px solid #E4105D;
     }
   `}
+
+  
 `;
