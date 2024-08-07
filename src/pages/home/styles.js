@@ -5,7 +5,6 @@ export const Container = styled.main`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -17,7 +16,6 @@ export const Title =  styled.h2`
   font-weight: 700;
   color: #fff;
   width: 320px;
-
   margin-bottom: 20px;
   line-height: 44px;
   font-family: 'Open Sans';
@@ -33,7 +31,6 @@ export const TextContent = styled.p`
   font-weight: 400;
   color: #D9D9D9;
   width: 420px;
-
   margin-bottom: 20px;
   line-height: 22px;
   font-family: 'Open Sans';

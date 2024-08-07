@@ -2,7 +2,7 @@ import React from 'react';
 
 import { IconContainer, InputContainer, InputText } from './styles'
 
-const Input = ({leftIcon, name, ...rest}) => {
+const Input = ({leftIcon, name, control, ...rest}) => {
   return (
     <InputContainer>
         {leftIcon ? (<IconContainer>{leftIcon}</IconContainer>) : null}

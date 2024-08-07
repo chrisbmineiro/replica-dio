@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const InputContainer = styled.div`
   display: flex;
-  margin-bottom: 20px;
   align-items: center;
-  height: 30px;
 
+  margin-bottom: 20px;
+  height: 30px;
   max-width: 275px;
   width: 100%;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #3B3450;
 `;
 
 export const IconContainer = styled.div`
@@ -20,4 +20,5 @@ export const InputText = styled.input`
   height: 30px;
   background-color: transparent;
   color: #FFFFFF;
+  flex: 1;
 `;

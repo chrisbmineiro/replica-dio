@@ -13,9 +13,9 @@ export const ImageBackground = styled.img`
 `
 
 export const Content = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 12px;
 `
 
@@ -85,7 +85,8 @@ export const HasInfo = styled.div`
         font-weight: 700;
         font-size: 12px;
         line-height: 16px;    
-        color: #FFFFFF80  
+        color: #FFFFFF80;
+        margin-bottom: 6px;
     }
 
     p {
@@ -94,5 +95,8 @@ export const HasInfo = styled.div`
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
+        display: flex;
+        align-items: center;
+        gap: 3px
     }
 `

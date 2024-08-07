@@ -1,5 +1,6 @@
 import React from "react";
 import Button from '../Button';
+import logo from '../../assets/logo-dio.png'
 
 import {
     Container,
@@ -12,27 +13,32 @@ import {
     UserPicture,
 } from './styles';
 
-const Header = () => {
+const Header = ({autenticado}) => {
   return (
     <Wrapper>
         <Container>
             <Row>
-                <img src="/src/assets/logo-dio.png" alt="Logo" />
-                <MenuRight href="#">Home</MenuRight>
-                <Button title="Entrar" />
-                <Button title="Cadastrar" />
-                <Menu>Sobre</Menu>
-                <Menu>Contato</Menu>
+                <img src={logo} alt="Logo DIO" />
+                {autenticado ? (
+                    <>
+                        <SearchInputContainer>
+                            <Input placeholder="Buscar..." />
+                        </SearchInputContainer>
+                        <Menu>Live Code</Menu>
+                        <Menu>Global</Menu>
+                    </>
+                ) : null}
             </Row>
             <Row>
-                <img src="/src/assets/logo-dio.png
-                " alt="logo da DIO" />
-                <SearchInputContainer>
-                    <Input placeholder="Pesquisar" />
-                </SearchInputContainer>
-                <MenuRight>
-                    <UserPicture src="/images/user.png" />
-                </MenuRight>
+                {autenticado ? (
+                    <UserPicture src="https://avatars.githubusercontent.com/u/165342064?v=4" />
+                ) : (
+                    <>
+                        <MenuRight href="/">Home</MenuRight>
+                        <Button title="Entrar" />
+                        <Button title="Cadastrar" />
+                    </>
+                )}
             </Row>
         </Container>
     </Wrapper>
