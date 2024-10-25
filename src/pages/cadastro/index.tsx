@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { MdEmail, MdLock, MdPerson } from 'react-icons/md' 
+import { MdEmail, MdLock, MdPerson } from 'react-icons/md'
+import React from 'react';
 
 import Button from "../../components/Button";
 import Header from "../../components/Header";
@@ -28,9 +29,9 @@ const Cadastro = () => {
                         <TitleLogin>Comece agora grátis</TitleLogin>
                         <SubtitleLogin>Crie sua conta e make the change._</SubtitleLogin>
                         <form>
-                            <Input placeholder="Nome completo" type="text" leftIcon={<MdPerson />} />
-                            <Input placeholder="E-mail" type="email" leftIcon={<MdEmail />} />
-                            <Input placeholder="Password" type="password" leftIcon={<MdLock />} />
+                            <Input placeholder="Nome completo" type="text" leftIcon={<MdPerson />} name={"icone"} />
+                            <Input placeholder="E-mail" type="email" leftIcon={<MdEmail />} name={"email"} />
+                            <Input placeholder="Password" type="password" leftIcon={<MdLock />} name={"senha"} />
                             <Button title="Criar minha conta" variant="secondary" onClick={handleClickCreateAccount} type="button" />
                         </form>
                         <Column>

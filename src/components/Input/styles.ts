@@ -24,3 +24,8 @@ export const InputText = styled.input`
   color: #FFFFFF;
   flex: 1;
 `;
+
+export const ErrorText = styled.p`
+  color: #E83F5B;
+  font-size: 14px;
+`;
